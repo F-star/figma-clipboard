@@ -22,7 +22,7 @@ document.getElementById("parse-btn").addEventListener("click", () => {
  * @param {string} htmlStr
  */
 const resolveHTMLStr = (htmlStr) => {
-  const head = '<meta charset="utf-8"><meta charset="utf-8">';
+  const head = '<meta charset="utf-8">';
   if (!htmlStr.startsWith(head)) {
     console.warn("不是 Figma 格式");
     return;
