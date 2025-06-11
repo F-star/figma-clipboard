@@ -29,7 +29,7 @@ const resolveHTMLStr = (htmlStr) => {
   }
 
   const metaLeft = htmlStr.indexOf("(figmeta)") + "(figmeta)".length;
-  const metaRight = htmlStr.indexOf("(/figmeta)-->", metaLeft);
+  const metaRight = htmlStr.indexOf("(/figmeta)--", metaLeft);
   const metaBase64 = htmlStr.slice(metaLeft, metaRight);
   console.log(
     "---------------------------- figmeta -----------------------------"
